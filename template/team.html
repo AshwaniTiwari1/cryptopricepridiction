@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+
+     body{
+        background-color:black;
+        color:white
+    }
+    .navbar-toggler {
+        z-index: 1;
+    }
+    
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+
+
+    .page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 80px 0;
+    text-align: center;
+    /*background: linear-gradient(to right, #00539C, #4F84C4 50%);
+    background-color: #a75859;*/
+    background-color:lightblue;
+}
+
+.page-header h2 {
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.page-header a {
+    position: relative;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.page-header a::after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 7px;
+    top: 6.5px;
+    right: -6px;
+    border-radius: 7px;
+    background: #ffffff;
+}
+
+.page-header a:last-child::after {
+    display: none;
+}
+
+h2.section-title {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+h2.section-title::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    /*background: linear-gradient(to left, #4F84C4, #00539C, #4F84C4);*/
+    background: red;
+    border-radius: 0 100% 100% 0;
+}
+
+/*******************************/
+/*********** Team CSS **********/
+/*******************************/
+.team {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 60px 0;
+}
+
+@media (min-width: 768px) {
+    .team {
+        padding: 45px 60px 60px 60px;
+    }
+}
+
+
+.team .team-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: rgba(0, 0, 0, .05);
+    /*background: #a75859;*/
+    border-radius: 300px 300px 5px 5px;
+}
+
+.team .team-img {
+    position: relative;
+    width: 100%;
+     height: 350px;
+    overflow: hidden;
+}
+
+.team .team-img img {
+    width: 100%;
+    height: 350px;
+    border-radius: 300px;
+}
+
+.team .team-text {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.team .team-text h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.team .team-text p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.team .team-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /*background: rgba(79, 132, 196, .92);*/
+    background: #a75859;
+    border-radius: 300px 300px 5px 5px;
+    opacity: 0;
+    transition: .5s;
+}
+
+.team .team-item:hover .team-social {
+    opacity: 1;
+}
+
+.team .team-social a {
+    color: #ffffff;
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+
+/*---Center IN SECTION ----*/
+.section-header {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    left: calc(50% - 30px);
+    bottom: 0;
+    /*background: linear-gradient(to left, #4F84C4, #00539C, #4F84C4);*/
+    background-color: #a75859;
+    border-radius: 100%;
+}
+
+.section-header h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-header p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*-----End section Header------*/
+    </style>
+
+</head>
+
+<body>
+
+
+
+
+<!-- Page Header Start -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Teammate</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="">Home</a>
+                            <a href="#">Team</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+ 
+
+
+    <!-- Team Start -->
+            <div class="team">
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Our Team Member</h2>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium ornare velit non</p> -->
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-lg-4 ">
+                            <div class="team-item">
+                                <div class="team-img">
+                                  <!--  <img src="shiwam3.jpg" alt="Team">-->
+                                    <img src="ashu.jpeg" alt="Team">
+                                </div>
+                                <div class="team-text">
+                                    <h3>Ashwani Sushil Tiwari</h3>
+                                    <p>DEVELOPER</p>
+                                </div>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-pinterest"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-lg-4 ">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="sule.jpg" alt="Team">
+                                </div>
+                                <div class="team-text">
+                                    <h3>Aditya Vilash Sule</h3>
+                                    <p>PROJECT MANAGER</p>
+                                </div>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-pinterest"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-4 col-lg-4 ">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="rahul.jpeg" alt="Team">
+                                </div>
+                                <div class="team-text">
+                                    <h3>Rahul Yadav</h3>
+                                    <p>PROJECT TESTER</p>
+                                </div>
+                                <div class="team-social">
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-pinterest"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Team End -->
+
+   
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/tether/tether.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
